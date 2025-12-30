@@ -3,10 +3,12 @@
 import { useState } from "react";
 import { useTheme } from "@/hooks/useTheme";
 import { motion, AnimatePresence } from "framer-motion";
-import { Heart, Sun, Moon, Menu, X } from "lucide-react";
+import { Heart, ShoppingCart, Sun, Moon, Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useFavorites } from "@/context/FavoritesContext";
+import { useCart } from "@/context/CartContext";
 
 interface NavItem {
   label: string;
@@ -16,7 +18,6 @@ interface NavItem {
 const navItems: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "Products", href: "/products" },
-  { label: "Cart", href: "/cart" },
   { label: "Login", href: "/login" },
 ];
 
@@ -24,9 +25,14 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
   const pathname = usePathname();
+  const { favorites } = useFavorites();
+  const { cart } = useCart();
+
+  // total quantity of all items in cart
+  const totalCartQty = cart.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
-    <nav className="fixed w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-md transition-colors">
+    <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-md transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo + Company Name */}
@@ -40,7 +46,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-4">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
               return (
@@ -69,18 +75,82 @@ export default function Navbar() {
               );
             })}
 
+            {/* Favorites */}
+            <Link href="/favorites" className="relative">
+              <motion.button
+                whileTap={{ scale: 0.9 }}
+                className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 shadow-md hover:scale-105 transition relative"
+              >
+                <Heart size={20} />
+                {favorites.length > 0 && (
+                  <span className="absolute -top-1 -right-1 bg-red-500 text-white rounded-full w-4 h-4 text-xs flex items-center justify-center">
+                    {favorites.length}
+                  </span>
+                )}
+              </motion.button>
+            </Link>
+
+            {/* Cart */}
+            <Link href="/cart" className="relative">
+              <motion.button
+                whileTap={{ scale: 0.9 }}
+                className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 shadow-md hover:scale-105 transition relative"
+              >
+                <ShoppingCart size={20} />
+                {totalCartQty > 0 && (
+                  <span className="absolute -top-1 -right-1 bg-green-500 text-white rounded-full w-4 h-4 text-xs flex items-center justify-center">
+                    {totalCartQty}
+                  </span>
+                )}
+              </motion.button>
+            </Link>
+
             {/* Theme Toggle */}
             <motion.button
               onClick={toggleTheme}
               whileTap={{ scale: 0.9 }}
-              className="ml-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 shadow-md hover:scale-105 transition"
+              className="ml-2 flex items-center justify-center w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 shadow-md hover:scale-105 transition relative"
+              title={
+                theme === "light"
+                  ? "Switch to Dark Mode"
+                  : "Switch to Light Mode"
+              }
             >
-              {theme === "light" ? <Moon size={18} /> : <Sun size={18} />}
+              <motion.div
+                animate={{ rotate: theme === "light" ? 0 : 180 }}
+                transition={{ duration: 0.5 }}
+              >
+                {theme === "light" ? <Moon size={18} /> : <Sun size={18} />}
+              </motion.div>
             </motion.button>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center gap-2">
+            {/* Favorites Mobile */}
+            <Link href="/favorites" className="relative">
+              <Heart size={20} className="text-gray-700 dark:text-gray-200" />
+              {favorites.length > 0 && (
+                <span className="absolute -top-1 -right-1 bg-red-500 text-white rounded-full w-4 h-4 text-xs flex items-center justify-center">
+                  {favorites.length}
+                </span>
+              )}
+            </Link>
+
+            {/* Cart Mobile */}
+            <Link href="/cart" className="relative">
+              <ShoppingCart
+                size={20}
+                className="text-gray-700 dark:text-gray-200"
+              />
+              {totalCartQty > 0 && (
+                <span className="absolute -top-1 -right-1 bg-green-500 text-white rounded-full w-4 h-4 text-xs flex items-center justify-center">
+                  {totalCartQty}
+                </span>
+              )}
+            </Link>
+
+            {/* Menu Toggle */}
             <motion.button
               onClick={() => setIsOpen(!isOpen)}
               whileTap={{ scale: 0.9 }}
@@ -113,14 +183,14 @@ export default function Navbar() {
                         ? "font-semibold text-blue-600 dark:text-blue-400"
                         : "text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
                     }`}
-                    onClick={() => setIsOpen(false)} // Close mobile menu on click
+                    onClick={() => setIsOpen(false)}
                   >
                     {item.label}
                   </Link>
                 );
               })}
 
-              {/* Theme Toggle */}
+              {/* Theme Toggle Mobile */}
               <button
                 onClick={toggleTheme}
                 className="mt-2 px-3 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 w-full flex items-center justify-center gap-2"

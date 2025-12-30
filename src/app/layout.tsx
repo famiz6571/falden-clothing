@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ReactNode } from "react";
 import { CartProvider } from "@/context/CartContext";
+import { FavoritesProvider } from "@/context/FavoritesContext";
 
 export const metadata = {
   title: "FALDEN Clothing",
@@ -12,11 +13,20 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
+      <body className="bg-gray-50 dark:bg-gray-900 transition-colors">
         <CartProvider>
-          <Navbar />
-          <main className="flex-grow">{children}</main>
-          <Footer />
+          <FavoritesProvider>
+            {/* Fixed Navbar */}
+            <Navbar />
+
+            {/* Main content with top padding equal to navbar height */}
+            <main className="pt-16 min-h-[calc(100vh-4rem-4rem)]">
+              {children}
+            </main>
+
+            {/* Footer */}
+            <Footer />
+          </FavoritesProvider>
         </CartProvider>
       </body>
     </html>
