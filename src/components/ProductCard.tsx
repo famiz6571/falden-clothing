@@ -22,7 +22,7 @@ export default function ProductCard({ product }: Props) {
   return (
     <motion.div
       whileHover={{ y: -5, scale: 1.03 }}
-      className="group relative flex flex-col bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-md hover:shadow-xl transition-all overflow-hidden"
+      className="relative flex flex-col bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-md hover:shadow-xl transition-all overflow-hidden group"
     >
       {/* Image */}
       <div className="relative h-64 w-full">
@@ -34,10 +34,10 @@ export default function ProductCard({ product }: Props) {
         />
 
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 rounded-t-2xl bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-30 transition duration-500" />
+        <div className="absolute inset-0 rounded-t-2xl bg-gradient-to-t from-black/40 via-transparent to-transparent" />
 
-        {/* Hover Buttons */}
-        <div className="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition duration-500">
+        {/* Always Visible Buttons */}
+        <div className="absolute top-3 right-3 flex flex-col gap-2">
           <button
             onClick={() => toggleFavorite(product)}
             className={`p-2 rounded-full bg-white dark:bg-gray-800 shadow-md hover:scale-110 transition transform ${
@@ -59,7 +59,10 @@ export default function ProductCard({ product }: Props) {
       {/* Product Info */}
       <div className="p-5 flex flex-col justify-between flex-1 gap-3">
         <div className="flex flex-col gap-1">
-          <h3 className="text-lg md:text-xl font-semibold text-gray-900 dark:text-gray-100 truncate">
+          <h3
+            className="text-lg md:text-xl font-semibold text-gray-900 dark:text-gray-100 truncate cursor-pointer"
+            onClick={() => router.push(`/product/${product.id}`)}
+          >
             {product.name}
           </h3>
           <p className="text-gray-600 dark:text-gray-300 text-sm line-clamp-1">
@@ -81,7 +84,6 @@ export default function ProductCard({ product }: Props) {
         <div className="mt-4 flex justify-center">
           {cartItem ? (
             <div className="flex items-center justify-between w-3/5 bg-white/20 dark:bg-gray-800/40 backdrop-blur-sm border border-white/30 dark:border-gray-700 rounded-xl p-1 shadow-md">
-              {/* Decrease Button */}
               <button
                 onClick={() => decreaseQty(product.id)}
                 className="flex items-center justify-center w-10 h-10 bg-red-500 hover:bg-red-600 text-white rounded-full shadow-md transition-transform transform hover:scale-110 cursor-pointer"
@@ -89,12 +91,10 @@ export default function ProductCard({ product }: Props) {
                 <Minus size={18} />
               </button>
 
-              {/* Quantity Display */}
               <span className="text-gray-900 dark:text-gray-100 font-semibold text-lg">
                 {cartItem.quantity}
               </span>
 
-              {/* Increase Button */}
               <button
                 onClick={() => increaseQty(product.id)}
                 className="flex items-center justify-center w-10 h-10 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-md transition-transform transform hover:scale-110 cursor-pointer"

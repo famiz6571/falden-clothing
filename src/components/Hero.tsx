@@ -14,12 +14,12 @@ export default function Hero() {
 
       <div className="max-w-7xl mx-auto px-4 py-20 md:py-28 flex flex-col md:flex-row items-center md:justify-between">
         {/* Text Content */}
-        <div className="md:w-1/2 space-y-6">
+        <div className="md:w-1/2 space-y-6 text-center md:text-left">
           <motion.h1
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
-            className="text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-gray-100"
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-gray-100"
           >
             FALDEN Clothing
           </motion.h1>
@@ -28,7 +28,7 @@ export default function Hero() {
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
-            className="text-gray-700 dark:text-gray-300 text-lg md:text-xl"
+            className="text-gray-700 dark:text-gray-300 text-base sm:text-lg md:text-xl"
           >
             Discover the latest fashion trends. Shop our exclusive collection of
             clothing, shoes, and accessories.
@@ -55,12 +55,13 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="md:w-1/2 mt-10 md:mt-0 flex justify-center"
         >
-          <div className="relative w-full max-w-md h-80 md:h-96 rounded-xl overflow-hidden shadow-2xl">
+          <div className="w-full sm:w-4/5 md:w-full rounded-xl overflow-hidden shadow-2xl">
             <Image
               src="/hero-fashion.png"
               alt="FALDEN Fashion"
-              fill
-              className="object-cover rounded-xl"
+              width={600} // Desktop width
+              height={600} // Desktop height
+              className="w-full h-auto object-cover rounded-xl"
               priority
             />
           </div>

@@ -51,14 +51,16 @@ export default function ProductDetailPage() {
       <div className="flex flex-col md:flex-row gap-10">
         {/* Product Image */}
         <motion.div
-          className="flex-1 relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-lg"
+          className="flex-1 mt-5 md:mt-0 flex justify-center md:justify-start"
           whileHover={{ scale: 1.02 }}
+          transition={{ duration: 0.3 }}
         >
           <Image
             src={product.image}
             alt={product.name}
-            fill
-            className="object-cover rounded-2xl"
+            width={500}
+            height={500}
+            className="w-full max-w-md h-auto object-cover rounded-2xl shadow-lg"
           />
         </motion.div>
 
