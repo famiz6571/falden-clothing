@@ -11,7 +11,7 @@ interface Product {
   description: string;
 }
 
-interface CartItem extends Product {
+export interface CartItem extends Product {
   quantity: number;
 }
 
@@ -21,7 +21,9 @@ interface CartContextType {
   removeFromCart: (id: number) => void;
   increaseQty: (id: number) => void;
   decreaseQty: (id: number) => void;
+  updateQuantity: (id: number, quantity: number) => void; // exact qty setter
   clearCart: () => void;
+  totalPrice: () => number;
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -65,7 +67,17 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     );
   };
 
+  const updateQuantity = (id: number, quantity: number) => {
+    if (quantity < 1) return;
+    setCart((prev) =>
+      prev.map((item) => (item.id === id ? { ...item, quantity } : item))
+    );
+  };
+
   const clearCart = () => setCart([]);
+
+  const totalPrice = () =>
+    cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   return (
     <CartContext.Provider
@@ -75,7 +87,9 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
         removeFromCart,
         increaseQty,
         decreaseQty,
+        updateQuantity,
         clearCart,
+        totalPrice,
       }}
     >
       {children}
@@ -85,6 +99,6 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
 
 export const useCart = () => {
   const context = useContext(CartContext);
-  if (!context) throw new Error("useCart must be used within CartProvider");
+  if (!context) throw new Error("useCart must be used within a CartProvider");
   return context;
 };

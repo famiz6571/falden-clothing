@@ -1,0 +1,23 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="200"
+    height="200"
+    viewBox="0 0 64 64"
+    fill="none"
+>
+    <!-- Cart basket -->
+    <rect x="8" y="16" width="48" height="32" rx="2" stroke="#4A90E2" stroke-width="2" fill="#E6F0FA"/>
+    
+    <!-- Cart handle -->
+    <line x1="8" y1="16" x2="0" y2="8" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Cart wheels -->
+    <circle cx="16" cy="52" r="4" fill="#4A90E2"/>
+    <circle cx="48" cy="52" r="4" fill="#4A90E2"/>
+    
+    <!-- Sad face inside cart -->
+    <circle cx="32" cy="32" r="6" fill="#B0D4F1"/>
+    <circle cx="30" cy="31" r="1" fill="#4A90E2"/>
+    <circle cx="34" cy="31" r="1" fill="#4A90E2"/>
+    <path d="M30,35 Q32,37 34,35" stroke="#4A90E2" stroke-width="1" fill="none"/>
+</svg>

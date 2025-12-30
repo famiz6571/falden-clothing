@@ -3,20 +3,58 @@
 import { motion } from "framer-motion";
 import { Instagram, Facebook, Twitter, Youtube, Mail } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="bg-gray-900 dark:bg-gray-800 text-gray-100">
       <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Company Info */}
-        <div className="space-y-4">
-          <h3 className="text-2xl font-bold text-white">FALDEN CLOTHING</h3>
+        <div className="space-y-4 flex flex-col items-start">
+          {/* Logo + Name */}
+          <div className="flex items-center gap-3">
+            <Link href="/">
+              <Image src="/falden.svg" alt="FALDEN" width={50} height={50} />
+            </Link>
+            <h3 className="text-2xl font-bold text-white">FALDEN CLOTHING</h3>
+          </div>
+
           <p className="text-gray-400">
             Bringing high-quality, trendy clothing to everyone. Style, comfort,
             and sustainability in every product we create.
           </p>
+
+          {/* Contact */}
           <div className="flex items-center gap-2 text-gray-400">
             <Mail size={18} /> contact@faldenclothing.com
+          </div>
+
+          {/* Social Icons */}
+          <div className="flex items-center gap-4 mt-2">
+            <Link
+              href="#"
+              className="text-gray-400 hover:text-blue-500 transition"
+            >
+              <Facebook size={24} />
+            </Link>
+            <Link
+              href="#"
+              className="text-gray-400 hover:text-pink-500 transition"
+            >
+              <Instagram size={24} />
+            </Link>
+            <Link
+              href="#"
+              className="text-gray-400 hover:text-sky-400 transition"
+            >
+              <Twitter size={24} />
+            </Link>
+            <Link
+              href="#"
+              className="text-gray-400 hover:text-red-600 transition"
+            >
+              <Youtube size={24} />
+            </Link>
           </div>
         </div>
 
@@ -53,22 +91,31 @@ export default function Footer() {
             viewport={{ once: true }}
             className="flex flex-col gap-2"
           >
-            <Link href="#" className="hover:text-blue-500 transition">
+            <Link
+              href="/shipping-returns"
+              className="hover:text-blue-500 transition"
+            >
               Shipping & Returns
             </Link>
-            <Link href="#" className="hover:text-blue-500 transition">
+            <Link href="/faqs" className="hover:text-blue-500 transition">
               FAQs
             </Link>
-            <Link href="#" className="hover:text-blue-500 transition">
+            <Link
+              href="/privacy-policy"
+              className="hover:text-blue-500 transition"
+            >
               Privacy Policy
             </Link>
-            <Link href="#" className="hover:text-blue-500 transition">
+            <Link
+              href="/terms-and-conditions"
+              className="hover:text-blue-500 transition"
+            >
               Terms & Conditions
             </Link>
           </motion.div>
         </div>
 
-        {/* Newsletter + Socials */}
+        {/* Newsletter */}
         <div className="space-y-4">
           <h4 className="font-semibold text-white">Subscribe</h4>
           <p className="text-gray-400">

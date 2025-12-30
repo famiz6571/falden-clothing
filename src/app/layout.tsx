@@ -8,6 +8,10 @@ import { FavoritesProvider } from "@/context/FavoritesContext";
 export const metadata = {
   title: "FALDEN Clothing",
   description: "FALDEN Clothing e-commerce store",
+  icons: {
+    icon: "/falden.svg",
+    apple: "/falden.svg",
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

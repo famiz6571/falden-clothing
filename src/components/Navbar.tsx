@@ -38,7 +38,22 @@ export default function Navbar() {
           {/* Logo + Company Name */}
           <div className="flex items-center gap-2">
             <Link href="/">
-              <Image src="/favicon.ico" alt="FALDEN" width={36} height={36} />
+              <Image
+                src="/falden.svg"
+                alt="FALDEN"
+                width={36}
+                height={36}
+                className="hidden dark:block"
+              />
+
+              {/* Dark logo in light mode */}
+              <Image
+                src="/falden-dark.svg"
+                alt="FALDEN"
+                width={36}
+                height={36}
+                className="block dark:hidden"
+              />
             </Link>
             <span className="font-bold text-xl text-gray-900 dark:text-gray-100">
               FALDEN CLOTHING
