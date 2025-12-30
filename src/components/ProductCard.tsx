@@ -3,18 +3,9 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Heart, Eye, Star, Plus, Minus } from "lucide-react";
-import { useCart } from "@/context/CartContext";
+import { Product, useCart } from "@/context/CartContext";
 import { useFavorites } from "@/context/FavoritesContext";
 import { useRouter } from "next/navigation";
-
-interface Product {
-  id: number;
-  name: string;
-  price: number;
-  image: string;
-  rating: number;
-  description: string;
-}
 
 interface Props {
   product: Product;

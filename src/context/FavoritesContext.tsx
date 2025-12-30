@@ -1,15 +1,8 @@
 "use client";
 
 import { createContext, useContext, useState, ReactNode } from "react";
+import { Product } from "./CartContext";
 
-interface Product {
-  id: number;
-  name: string;
-  price: number;
-  image: string;
-  rating: number;
-  description: string;
-}
 
 interface FavoritesContextType {
   favorites: Product[];
