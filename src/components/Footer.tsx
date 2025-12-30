@@ -112,6 +112,12 @@ export default function Footer() {
             >
               Terms & Conditions
             </Link>
+            <Link
+              href="/cookie-policy"
+              className="hover:text-blue-500 transition"
+            >
+              Cookie Policy
+            </Link>
           </motion.div>
         </div>
 

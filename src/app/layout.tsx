@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { ReactNode } from "react";
 import { CartProvider } from "@/context/CartContext";
 import { FavoritesProvider } from "@/context/FavoritesContext";
+import CookieConsent from "@/components/CookieConsent"; // ✅ ADD THIS
 
 export const metadata = {
   title: "FALDEN Clothing",
@@ -23,13 +24,16 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             {/* Fixed Navbar */}
             <Navbar />
 
-            {/* Main content with top padding equal to navbar height */}
+            {/* Main content */}
             <main className="pt-16 min-h-[calc(100vh-4rem-4rem)]">
               {children}
             </main>
 
             {/* Footer */}
             <Footer />
+
+            {/* 🍪 Cookie Consent (GLOBAL) */}
+            <CookieConsent />
           </FavoritesProvider>
         </CartProvider>
       </body>

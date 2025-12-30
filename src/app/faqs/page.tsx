@@ -1,43 +1,120 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, memo } from "react";
+import { motion } from "framer-motion";
 import CustomerPageLayout from "@/components/CustomerPageLayout";
-import { ChevronDown, ChevronUp, Mail } from "lucide-react";
+import {
+  ChevronDown,
+  HelpCircle,
+  Truck,
+  RefreshCw,
+  CreditCard,
+  Mail,
+} from "lucide-react";
 
-const faqs = [
+/* ================= FAQ DATA ================= */
+
+const faqSections = [
   {
-    question: "How long does shipping take?",
-    answer:
-      "Shipping typically takes 3-7 business days depending on your location.",
+    title: "Shipping",
+    icon: Truck,
+    items: [
+      {
+        q: "How long does shipping take?",
+        a: "Orders are delivered within 3–7 business days depending on your location.",
+      },
+      {
+        q: "Do you offer express shipping?",
+        a: "Yes, express shipping is available at checkout for faster delivery.",
+      },
+      {
+        q: "Do you ship internationally?",
+        a: "Currently we ship within the UAE. International shipping will be available soon.",
+      },
+    ],
   },
   {
-    question: "Can I return a product?",
-    answer:
-      "Yes! Returns are accepted within 30 days in original condition with tags.",
+    title: "Returns & Refunds",
+    icon: RefreshCw,
+    items: [
+      {
+        q: "Can I return a product?",
+        a: "Yes, returns are accepted within 30 days if the product is unused and in original condition.",
+      },
+      {
+        q: "How long does a refund take?",
+        a: "Refunds are processed within 5–7 business days after inspection.",
+      },
+      {
+        q: "Are sale items refundable?",
+        a: "Sale items are eligible for store credit only unless damaged.",
+      },
+    ],
   },
   {
-    question: "Do you offer international shipping?",
-    answer:
-      "Currently, we only ship within the UAE, but we plan to expand soon.",
+    title: "Payments",
+    icon: CreditCard,
+    items: [
+      {
+        q: "What payment methods do you accept?",
+        a: "We accept credit/debit cards, Apple Pay, Google Pay, and secure online payments.",
+      },
+      {
+        q: "Is my payment information secure?",
+        a: "Yes, all transactions are encrypted using industry-standard security protocols.",
+      },
+    ],
   },
 ];
 
+/* ================= PAGE ================= */
+
 export default function FAQsPage() {
+  const [activeIndex, setActiveIndex] = useState<string | null>(null);
+
   return (
-    <CustomerPageLayout title="FAQs">
-      <div className="space-y-4">
-        {faqs.map((faq, i) => (
-          <FAQItem key={i} question={faq.question} answer={faq.answer} />
+    <CustomerPageLayout title="Frequently Asked Questions">
+      <div className="space-y-12">
+        {faqSections.map((section, sectionIndex) => (
+          <section key={section.title}>
+            {/* Section Header */}
+            <div className="flex items-center gap-3 mb-6">
+              <section.icon className="text-blue-500" />
+              <h2 className="text-xl font-semibold">{section.title}</h2>
+            </div>
+
+            {/* FAQ Cards */}
+            <div className="space-y-4">
+              {section.items.map((item, itemIndex) => {
+                const id = `${sectionIndex}-${itemIndex}`;
+                return (
+                  <FAQItem
+                    key={id}
+                    question={item.q}
+                    answer={item.a}
+                    open={activeIndex === id}
+                    onToggle={() =>
+                      setActiveIndex(activeIndex === id ? null : id)
+                    }
+                  />
+                );
+              })}
+            </div>
+          </section>
         ))}
 
-        {/* CTA Button */}
-        <div className="mt-6">
+        {/* CTA */}
+        <div className="mt-12 bg-white/10 dark:bg-gray-800/40 backdrop-blur-xl border border-white/20 dark:border-gray-700 rounded-2xl p-8 text-center shadow-xl">
+          <HelpCircle className="mx-auto mb-4 text-blue-500" size={32} />
+          <h3 className="text-xl font-semibold mb-2">Still need help?</h3>
+          <p className="text-gray-600 dark:text-gray-300 mb-6">
+            Our support team is always ready to assist you.
+          </p>
           <a
             href="mailto:contact@faldenclothing.com"
-            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-semibold px-4 py-3 rounded-lg transition"
+            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl shadow hover:shadow-xl transition"
           >
-            <Mail size={20} />
+            <Mail />
             Contact Support
           </a>
         </div>
@@ -46,30 +123,43 @@ export default function FAQsPage() {
   );
 }
 
-function FAQItem({ question, answer }: { question: string; answer: string }) {
-  const [open, setOpen] = useState(false);
+/* ================= OPTIMIZED FAQ ITEM ================= */
 
+const FAQItem = memo(function FAQItem({
+  question,
+  answer,
+  open,
+  onToggle,
+}: {
+  question: string;
+  answer: string;
+  open: boolean;
+  onToggle: () => void;
+}) {
   return (
-    <div className="border border-gray-300 dark:border-gray-600 rounded-lg overflow-hidden">
+    <div className="bg-white/10 dark:bg-gray-800/40 backdrop-blur-xl border border-white/20 dark:border-gray-700 rounded-xl overflow-hidden transition">
       <button
-        className="w-full flex justify-between items-center px-4 py-3 text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 transition"
-        onClick={() => setOpen(!open)}
+        onClick={onToggle}
+        className="w-full flex items-center justify-between px-6 py-4 text-left"
       >
         <span className="font-medium">{question}</span>
-        {open ? <ChevronUp /> : <ChevronDown />}
+        <motion.span
+          animate={{ rotate: open ? 180 : 0 }}
+          transition={{ duration: 0.2 }}
+        >
+          <ChevronDown />
+        </motion.span>
       </button>
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            className="px-4 py-3 text-gray-700 dark:text-gray-300"
-          >
-            {answer}
-          </motion.div>
-        )}
-      </AnimatePresence>
+
+      {open && (
+        <motion.div
+          initial={{ opacity: 0, y: -4 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="px-6 pb-5 text-gray-600 dark:text-gray-300 text-sm"
+        >
+          {answer}
+        </motion.div>
+      )}
     </div>
   );
-}
+});
