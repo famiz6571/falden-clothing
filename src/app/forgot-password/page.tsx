@@ -1,35 +1,60 @@
 "use client";
 
-import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 import AuthLayout from "@/components/AuthLayout";
 import InputField from "@/components/InputField";
 import Button from "@/components/Button";
 import Link from "next/link";
 
-export default function ForgotPasswordPage() {
-  const [email, setEmail] = useState("");
+// Yup schema
+const schema = yup.object().shape({
+  email: yup
+    .string()
+    .email("Invalid email address")
+    .required("Email is required"),
+});
 
-  const handleReset = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Send password reset to:", email);
+type FormData = yup.InferType<typeof schema>;
+
+export default function ForgotPasswordPage() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+    reset,
+  } = useForm<FormData>({
+    resolver: yupResolver(schema),
+  });
+
+  const onSubmit = (data: FormData) => {
+    console.log("Send password reset to:", data.email);
+    alert(`Password reset instructions sent to ${data.email}`);
+    reset();
   };
 
   return (
     <AuthLayout title="Forgot Password">
-      <p className="text-gray-500 dark:text-gray-400 mb-4">
+      <p className="text-gray-500 dark:text-gray-400 mb-6 text-center">
         Enter your email address and we will send you instructions to reset your
         password.
       </p>
-      <form onSubmit={handleReset}>
+
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="max-w-md mx-auto space-y-4"
+      >
         <InputField
           label="Email"
           placeholder="you@example.com"
-          value={email}
-          onChange={setEmail}
           type="email"
+          {...register("email")}
+          error={errors.email?.message}
         />
-        <Button type="submit" fullWidth>
-          Send Reset Link
+
+        <Button type="submit" fullWidth disabled={isSubmitting}>
+          {isSubmitting ? "Sending..." : "Send Reset Link"}
         </Button>
       </form>
 

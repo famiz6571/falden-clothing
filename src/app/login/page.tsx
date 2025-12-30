@@ -1,40 +1,64 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+
 import AuthLayout from "@/components/AuthLayout";
 import InputField from "@/components/InputField";
 import Button from "@/components/Button";
 
-export default function LoginPage() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+// Yup validation schema
+const loginSchema = yup.object().shape({
+  email: yup.string().email("Invalid email").required("Email is required"),
+  password: yup
+    .string()
+    .required("Password is required")
+    .min(6, "Password must be at least 6 characters"),
+});
 
-  const handleLogin = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log({ email, password });
+type LoginFormData = yup.InferType<typeof loginSchema>;
+
+export default function LoginPage() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<LoginFormData>({
+    resolver: yupResolver(loginSchema),
+    defaultValues: {
+      email: "",
+      password: "",
+    },
+  });
+
+  const onSubmit = (data: LoginFormData) => {
+    console.log("Login payload:", data);
+    alert("Login successful!");
   };
 
   return (
     <AuthLayout title="Login">
-      <form onSubmit={handleLogin}>
+      <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
         <InputField
           label="Email"
           placeholder="you@example.com"
-          value={email}
-          onChange={setEmail}
           type="email"
+          {...register("email")}
+          error={errors.email?.message}
         />
+
         <InputField
           label="Password"
           placeholder="********"
-          value={password}
-          onChange={setPassword}
           type="password"
+          {...register("password")}
+          error={errors.password?.message}
         />
 
         <div className="flex justify-between items-center text-sm text-gray-500 dark:text-gray-400 mb-4">
-          <label className="flex items-center gap-2">
+          <label className="flex items-center gap-2 cursor-pointer">
             <input type="checkbox" className="accent-blue-600" /> Remember me
           </label>
           <Link
