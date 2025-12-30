@@ -10,7 +10,28 @@
     "gender": "Men",
     "rating": 4.5,
     "description": "A classic jacket perfect for all seasons, made with premium materials.",
-    "image": "/products/jacket.png"
+    "image": "/products/jacket.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>The Classic Jacket is a timeless wardrobe staple combining elegance and durability. Ideal for everyday wear and all seasons.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: 100% Cotton with polyester lining</li><li>Reinforced stitching for durability</li><li>Tailored fit suitable for casual or semi-formal outings</li><li>Care: Machine wash cold, hang dry</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "rating": 5,
+        "comment": "Perfect fit, high quality and stylish."
+      },
+      {
+        "id": 2,
+        "name": "Emily Smith",
+        "rating": 4,
+        "comment": "Comfortable, but could use more color options."
+      },
+      {
+        "id": 3,
+        "name": "Alex Johnson",
+        "rating": 4.5,
+        "comment": "Great jacket, keeps me warm and looks sharp."
+      }
+    ]
   },
   {
     "id": 2,
@@ -23,7 +44,28 @@
     "gender": "Women",
     "rating": 4.7,
     "description": "Lightweight summer dress for sunny days, comfortable and stylish.",
-    "image": "/products/dress.png"
+    "image": "/products/dress.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Summer Dress offers a breezy, elegant style for warm days. Breathable cotton ensures all-day comfort, perfect for casual outings or semi-formal events.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: 100% Cotton</li><li>Flattering A-line cut</li><li>Subtle detailing for enhanced style</li><li>Care: Gentle wash, hang dry</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Anna Lee",
+        "rating": 5,
+        "comment": "Super comfortable and gorgeous for summer outings."
+      },
+      {
+        "id": 2,
+        "name": "Sophie Turner",
+        "rating": 4,
+        "comment": "Fits nicely but a little long for my height."
+      },
+      {
+        "id": 3,
+        "name": "Maya Patel",
+        "rating": 4.5,
+        "comment": "Beautiful fabric and perfect for sunny days."
+      }
+    ]
   },
   {
     "id": 3,
@@ -36,7 +78,28 @@
     "gender": "Unisex",
     "rating": 4.8,
     "description": "Comfortable sneakers for everyday wear with durable sole.",
-    "image": "/products/sneakers.png"
+    "image": "/products/sneakers.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Lightweight and ergonomic, these sneakers are perfect for all-day wear. Breathable mesh keeps your feet cool, while a durable sole ensures long-lasting comfort.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Mesh textile upper with rubber sole</li><li>Lightweight and flexible for walking and running</li><li>Ergonomic design for optimal support</li><li>Care: Wipe clean with damp cloth, air dry</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "David Kim",
+        "rating": 5,
+        "comment": "Extremely comfortable and stylish!"
+      },
+      {
+        "id": 2,
+        "name": "Laura White",
+        "rating": 4,
+        "comment": "Great sneakers but took time to break in."
+      },
+      {
+        "id": 3,
+        "name": "Tom Harris",
+        "rating": 4.5,
+        "comment": "Perfect for casual and light sports activities."
+      }
+    ]
   },
   {
     "id": 4,
@@ -49,7 +112,28 @@
     "gender": "Men",
     "rating": 4.6,
     "description": "Cozy hoodie for casual outings, perfect for layering.",
-    "image": "/products/hoodie.png"
+    "image": "/products/hoodie.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Soft and cozy hoodie ideal for casual wear and layering in cooler months. Ribbed cuffs and hem ensure a snug fit.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Cotton-polyester blend</li><li>Front kangaroo pocket</li><li>Ribbed cuffs and hem for comfort</li><li>Care: Machine wash cold, tumble dry low</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Michael Brown",
+        "rating": 5,
+        "comment": "Super soft, love wearing it at home and outdoors."
+      },
+      {
+        "id": 2,
+        "name": "Jessica Taylor",
+        "rating": 4,
+        "comment": "Good quality but color fades slightly after washing."
+      },
+      {
+        "id": 3,
+        "name": "Ethan Scott",
+        "rating": 4.5,
+        "comment": "Perfect hoodie for chilly mornings."
+      }
+    ]
   },
   {
     "id": 5,
@@ -62,7 +146,28 @@
     "gender": "Unisex",
     "rating": 4.4,
     "description": "Classic fit jeans for versatile styling, durable fabric.",
-    "image": "/products/jeans.png"
+    "image": "/products/jeans.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>These Classic Jeans feature a timeless design suitable for all occasions. Durable fabric ensures longevity while offering comfort for daily wear.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: 98% Cotton, 2% Elastane</li><li>Regular fit, mid-rise waist</li><li>Five-pocket design</li><li>Care: Machine wash cold, tumble dry low</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Chris Johnson",
+        "rating": 5,
+        "comment": "Perfect fit and very comfortable."
+      },
+      {
+        "id": 2,
+        "name": "Sarah Parker",
+        "rating": 4,
+        "comment": "Good quality but slightly stiff at first."
+      },
+      {
+        "id": 3,
+        "name": "Liam Adams",
+        "rating": 4.5,
+        "comment": "Classic jeans that go with everything."
+      }
+    ]
   },
   {
     "id": 6,
@@ -75,7 +180,28 @@
     "gender": "Unisex",
     "rating": 4.3,
     "description": "Comfortable cotton T-shirt available in multiple colors.",
-    "image": "/products/tshirt.png"
+    "image": "/products/tshirt.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>A versatile T-shirt crafted from soft cotton, designed for comfort and everyday wear. Available in multiple colors to match your style.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: 100% Cotton</li><li>Classic round neck design</li><li>Regular fit</li><li>Care: Machine wash cold, tumble dry low</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Oliver Lee",
+        "rating": 5,
+        "comment": "Soft and comfortable, washes well."
+      },
+      {
+        "id": 2,
+        "name": "Emma Davis",
+        "rating": 4,
+        "comment": "Great color selection and quality."
+      },
+      {
+        "id": 3,
+        "name": "Sophia Martin",
+        "rating": 4.5,
+        "comment": "Perfect everyday T-shirt."
+      }
+    ]
   },
   {
     "id": 7,
@@ -88,7 +214,28 @@
     "gender": "Men",
     "rating": 4.9,
     "description": "Premium leather boots for formal and casual wear.",
-    "image": "/products/boots.png"
+    "image": "/products/boots.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Crafted from genuine leather, these boots provide long-lasting durability and a sophisticated style for formal or casual occasions.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Genuine leather</li><li>Classic lace-up design</li><li>Padded insole for comfort</li><li>Care: Leather cleaner and conditioner recommended</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Henry Scott",
+        "rating": 5,
+        "comment": "Outstanding quality and stylish."
+      },
+      {
+        "id": 2,
+        "name": "Alice Walker",
+        "rating": 4,
+        "comment": "Comfortable but a bit tight initially."
+      },
+      {
+        "id": 3,
+        "name": "Noah Brooks",
+        "rating": 4.5,
+        "comment": "Great for casual and semi-formal wear."
+      }
+    ]
   },
   {
     "id": 8,
@@ -101,7 +248,28 @@
     "gender": "Unisex",
     "rating": 4.7,
     "description": "Stylish denim jacket with classic fit and durable fabric.",
-    "image": "/products/denim-jacket.png"
+    "image": "/products/denim-jacket.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Denim Jacket offers a perfect blend of style and durability. A classic fit with reinforced seams makes it a versatile wardrobe staple.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: 100% Denim Cotton</li><li>Button-front closure</li><li>Multiple pockets for convenience</li><li>Care: Machine wash cold, tumble dry low</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Lucas Gray",
+        "rating": 5,
+        "comment": "Fits perfectly and looks great."
+      },
+      {
+        "id": 2,
+        "name": "Chloe Bennett",
+        "rating": 4,
+        "comment": "Stylish but slightly stiff at first."
+      },
+      {
+        "id": 3,
+        "name": "Jack Evans",
+        "rating": 4.5,
+        "comment": "A must-have classic jacket."
+      }
+    ]
   },
   {
     "id": 9,
@@ -114,7 +282,28 @@
     "gender": "Women",
     "rating": 4.8,
     "description": "Elegant evening gown for special occasions, luxurious fabric.",
-    "image": "/products/evening-gown.png"
+    "image": "/products/evening-gown.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Evening Gown is perfect for formal events and parties. Made with high-quality fabric, it provides elegance and comfort for special nights.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Silk blend with lace overlay</li><li>Floor-length A-line silhouette</li><li>Back zipper closure for perfect fit</li><li>Care: Dry clean only</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sophia Knight",
+        "rating": 5,
+        "comment": "Absolutely stunning and comfortable."
+      },
+      {
+        "id": 2,
+        "name": "Isabella Moore",
+        "rating": 4,
+        "comment": "Fits well, but fabric requires careful handling."
+      },
+      {
+        "id": 3,
+        "name": "Olivia King",
+        "rating": 4.5,
+        "comment": "Received many compliments at the party."
+      }
+    ]
   },
   {
     "id": 10,
@@ -127,7 +316,28 @@
     "gender": "Men",
     "rating": 4.5,
     "description": "Lightweight sports shorts for workouts and outdoor activities.",
-    "image": "/products/sports-shorts.png"
+    "image": "/products/sports-shorts.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>These Sports Shorts are perfect for running, gym, and outdoor workouts. Breathable and lightweight, they ensure maximum comfort and mobility.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Polyester-spandex blend</li><li>Elastic waistband with drawstring</li><li>Quick-dry fabric</li><li>Care: Machine wash cold, hang dry</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Ryan Clark",
+        "rating": 5,
+        "comment": "Perfect for gym workouts, very breathable."
+      },
+      {
+        "id": 2,
+        "name": "Ethan Hall",
+        "rating": 4,
+        "comment": "Comfortable, but a bit short for taller people."
+      },
+      {
+        "id": 3,
+        "name": "Noah Allen",
+        "rating": 4.5,
+        "comment": "Great quality and easy to wash."
+      }
+    ]
   },
   {
     "id": 11,
@@ -140,7 +350,28 @@
     "gender": "Women",
     "rating": 4.8,
     "description": "Warm winter coat with premium insulation.",
-    "image": "/products/winter-coat.png"
+    "image": "/products/winter-coat.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Stay warm and stylish this winter with our premium insulated Winter Coat. Soft inner lining and water-resistant fabric ensure comfort and protection.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Polyester outer shell with fleece lining</li><li>Insulated for cold weather</li><li>Hooded with adjustable drawstrings</li><li>Care: Machine wash gentle, air dry</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Grace Mitchell",
+        "rating": 5,
+        "comment": "Extremely warm and comfortable."
+      },
+      {
+        "id": 2,
+        "name": "Lily Carter",
+        "rating": 4,
+        "comment": "Looks stylish but slightly heavy."
+      },
+      {
+        "id": 3,
+        "name": "Chloe Hughes",
+        "rating": 4.5,
+        "comment": "Perfect for winter outings."
+      }
+    ]
   },
   {
     "id": 12,
@@ -153,7 +384,28 @@
     "gender": "Women",
     "rating": 4.4,
     "description": "Stylish floral skirt for casual and semi-formal wear.",
-    "image": "/products/floral-skirt.png"
+    "image": "/products/floral-skirt.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Floral Skirt features an elegant floral print for a feminine and chic look. Perfect for brunches, casual outings, or semi-formal events.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: 100% Cotton</li><li>Elastic waistband for comfortable fit</li><li>A-line silhouette</li><li>Care: Machine wash cold, hang dry</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sophia Foster",
+        "rating": 5,
+        "comment": "Lovely skirt, fits perfectly."
+      },
+      {
+        "id": 2,
+        "name": "Ella Brooks",
+        "rating": 4,
+        "comment": "Good quality fabric, colors are vibrant."
+      },
+      {
+        "id": 3,
+        "name": "Mia Kelly",
+        "rating": 4.5,
+        "comment": "Great for summer outings."
+      }
+    ]
   },
   {
     "id": 13,
@@ -166,7 +418,28 @@
     "gender": "Unisex",
     "rating": 4.7,
     "description": "Lightweight running shoes for optimal performance.",
-    "image": "/products/running-shoes.png"
+    "image": "/products/running-shoes.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Designed for runners, these shoes provide optimal grip, cushioning, and breathability. Suitable for road running or gym sessions.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Mesh upper with EVA sole</li><li>Lightweight and flexible</li><li>Shock absorption for high-impact activities</li><li>Care: Wipe clean, air dry</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Liam White",
+        "rating": 5,
+        "comment": "Light and comfortable, perfect for running."
+      },
+      {
+        "id": 2,
+        "name": "Evan Scott",
+        "rating": 4,
+        "comment": "Good grip, but sizing runs slightly small."
+      },
+      {
+        "id": 3,
+        "name": "Mason Green",
+        "rating": 4.5,
+        "comment": "Excellent support and cushioning."
+      }
+    ]
   },
   {
     "id": 14,
@@ -179,7 +452,28 @@
     "gender": "Women",
     "rating": 4.5,
     "description": "Cozy pullover sweater for winter comfort.",
-    "image": "/products/pullover.png"
+    "image": "/products/pullover.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Stay warm in style with this soft Pullover Sweater. Perfect for layering or casual wear during cooler months.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Wool-cotton blend</li><li>Classic crew neck</li><li>Ribbed cuffs and hem</li><li>Care: Hand wash cold, lay flat to dry</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Ava Thompson",
+        "rating": 5,
+        "comment": "Soft, cozy, and looks great."
+      },
+      {
+        "id": 2,
+        "name": "Isla Parker",
+        "rating": 4,
+        "comment": "Very comfortable, slightly oversized."
+      },
+      {
+        "id": 3,
+        "name": "Mila Roberts",
+        "rating": 4.5,
+        "comment": "Perfect for winter layering."
+      }
+    ]
   },
   {
     "id": 15,
@@ -192,7 +486,28 @@
     "gender": "Men",
     "rating": 4.6,
     "description": "Smart casual chinos for everyday styling.",
-    "image": "/products/chinos.png"
+    "image": "/products/chinos.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>These Chinos Pants offer a polished yet relaxed look suitable for work or casual outings. Soft, breathable fabric ensures comfort throughout the day.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Cotton-spandex blend</li><li>Regular fit with tapered leg</li><li>Flat-front design</li><li>Care: Machine wash cold, tumble dry low</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "James Martin",
+        "rating": 5,
+        "comment": "Perfect fit and style, very comfortable."
+      },
+      {
+        "id": 2,
+        "name": "Benjamin Carter",
+        "rating": 4,
+        "comment": "Good quality but slightly tight on thighs."
+      },
+      {
+        "id": 3,
+        "name": "William Lewis",
+        "rating": 4.5,
+        "comment": "Great everyday chinos."
+      }
+    ]
   },
   {
     "id": 16,
@@ -205,7 +520,28 @@
     "gender": "Women",
     "rating": 4.3,
     "description": "Trendy graphic T-shirt for casual outings.",
-    "image": "/products/graphic-tee.png"
+    "image": "/products/graphic-tee.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Graphic Tee adds personality to your casual wardrobe. Soft cotton and vibrant print make it perfect for everyday wear.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: 100% Cotton</li><li>Regular fit</li><li>Printed graphic design</li><li>Care: Machine wash inside out, hang dry</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Zoe Wright",
+        "rating": 5,
+        "comment": "Super soft and stylish."
+      },
+      {
+        "id": 2,
+        "name": "Lily Foster",
+        "rating": 4,
+        "comment": "Love the design but color fades slightly."
+      },
+      {
+        "id": 3,
+        "name": "Ella Morgan",
+        "rating": 4.5,
+        "comment": "Perfect casual T-shirt."
+      }
+    ]
   },
   {
     "id": 17,
@@ -218,7 +554,28 @@
     "gender": "Women",
     "rating": 4.8,
     "description": "Elegant high heels perfect for parties and formal events.",
-    "image": "/products/high-heels.png"
+    "image": "/products/high-heels.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>These High Heels elevate your style for any formal occasion. Designed for elegance, comfort, and lasting quality.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Faux leather upper, rubber sole</li><li>3-inch stiletto heel</li><li>Padded insole for comfort</li><li>Care: Wipe clean, store in a cool dry place</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Olivia Bennett",
+        "rating": 5,
+        "comment": "Beautiful and elegant, fits perfectly."
+      },
+      {
+        "id": 2,
+        "name": "Ava Harris",
+        "rating": 4,
+        "comment": "Comfortable for short events."
+      },
+      {
+        "id": 3,
+        "name": "Sophia Coleman",
+        "rating": 4.5,
+        "comment": "Perfect heels for parties."
+      }
+    ]
   },
   {
     "id": 18,
@@ -231,7 +588,28 @@
     "gender": "Men",
     "rating": 4.5,
     "description": "Premium leather belt to complement your outfit.",
-    "image": "/products/belt.png"
+    "image": "/products/belt.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Leather Belt is a classic accessory crafted from premium leather. Durable and stylish, it completes any outfit.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Genuine leather</li><li>Adjustable buckle closure</li><li>Width: 1.25 inches</li><li>Care: Wipe with damp cloth</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Henry Adams",
+        "rating": 5,
+        "comment": "High-quality belt, looks very classy."
+      },
+      {
+        "id": 2,
+        "name": "Lucas Bell",
+        "rating": 4,
+        "comment": "Good quality, slight stiffness initially."
+      },
+      {
+        "id": 3,
+        "name": "Ethan Ward",
+        "rating": 4.5,
+        "comment": "Durable and stylish."
+      }
+    ]
   },
   {
     "id": 19,
@@ -244,7 +622,28 @@
     "gender": "Unisex",
     "rating": 4.4,
     "description": "Warm beanie hat for winter season.",
-    "image": "/products/beanie.png"
+    "image": "/products/beanie.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Stay warm during cold weather with this cozy Beanie Hat. Soft fabric ensures comfort and durability.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Acrylic blend</li><li>Stretchable and comfortable fit</li><li>Unisex style</li><li>Care: Hand wash, lay flat to dry</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Mason Scott",
+        "rating": 5,
+        "comment": "Very warm and comfy."
+      },
+      {
+        "id": 2,
+        "name": "Ella Lewis",
+        "rating": 4,
+        "comment": "Soft but slightly loose for small heads."
+      },
+      {
+        "id": 3,
+        "name": "Ava Young",
+        "rating": 4.5,
+        "comment": "Great winter accessory."
+      }
+    ]
   },
   {
     "id": 20,
@@ -257,6 +656,27 @@
     "gender": "Women",
     "rating": 4.6,
     "description": "Comfortable sandals for sunny days and outdoor activities.",
-    "image": "/products/sandals.png"
+    "image": "/products/sandals.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Lightweight and stylish, these Summer Sandals are perfect for hot weather. Soft footbed ensures comfort during long walks.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Synthetic upper with rubber sole</li><li>Open-toe design</li><li>Adjustable straps for secure fit</li><li>Care: Wipe clean, air dry</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Lily Evans",
+        "rating": 5,
+        "comment": "Perfect for summer, very comfy."
+      },
+      {
+        "id": 2,
+        "name": "Grace Murphy",
+        "rating": 4,
+        "comment": "Stylish but straps could be softer."
+      },
+      {
+        "id": 3,
+        "name": "Emma Foster",
+        "rating": 4.5,
+        "comment": "Great for beach and casual wear."
+      }
+    ]
   }
 ]

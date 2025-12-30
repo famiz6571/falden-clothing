@@ -2,23 +2,14 @@
 
 import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
-import { useCart } from "@/context/CartContext";
+import { Product, useCart } from "@/context/CartContext";
 import { useFavorites } from "@/context/FavoritesContext";
 import { Heart, Star, Plus, Minus, ArrowLeft } from "lucide-react";
 import { useEffect, useState } from "react";
 import productsData from "@/data/products.json";
 import { motion } from "framer-motion";
 import ProductCard from "@/components/ProductCard";
-
-interface Product {
-  id: number;
-  name: string;
-  price: number;
-  image: string;
-  rating: number;
-  description: string;
-  isFeatured?: boolean;
-}
+import GlassCard from "@/components/GlassCard";
 
 export default function ProductDetailPage() {
   const { id } = useParams();
@@ -42,7 +33,6 @@ export default function ProductDetailPage() {
   if (!product)
     return <div className="text-center py-20">Product not found.</div>;
 
-  // Related Products (excluding current product)
   const relatedProducts = productsData
     .filter((p) => p.id !== product.id && p.isFeatured)
     .slice(0, 4);
@@ -73,12 +63,7 @@ export default function ProductDetailPage() {
         </motion.div>
 
         {/* Product Info */}
-        <motion.div
-          className="flex-1 flex flex-col gap-5"
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-        >
+        <GlassCard className="flex-1 flex flex-col gap-5">
           <div className="flex items-center justify-between">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">
               {product.name}
@@ -107,9 +92,10 @@ export default function ProductDetailPage() {
           </div>
 
           {/* Description */}
-          <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg">
-            {product.description}
-          </p>
+          <div
+            className="prose prose-gray dark:prose-invert text-gray-700 dark:text-gray-300"
+            dangerouslySetInnerHTML={{ __html: product.content }}
+          />
 
           {/* Add to Cart / Quantity */}
           {cartItem ? (
@@ -138,8 +124,33 @@ export default function ProductDetailPage() {
               Add to Cart
             </button>
           )}
-        </motion.div>
+        </GlassCard>
       </div>
+
+      {/* Customer Reviews */}
+      {product.reviews && product.reviews.length > 0 && (
+        <div className="mt-12 flex flex-col gap-5">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100">
+            Customer Reviews
+          </h2>
+          {product.reviews.map((review) => (
+            <GlassCard key={review.id}>
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="font-semibold text-gray-900 dark:text-gray-100">
+                  {review.name}
+                </h3>
+                <div className="flex items-center gap-1 text-yellow-500 font-medium">
+                  <Star size={16} />
+                  {review.rating.toFixed(1)}
+                </div>
+              </div>
+              <p className="text-gray-700 dark:text-gray-300">
+                {review.comment}
+              </p>
+            </GlassCard>
+          ))}
+        </div>
+      )}
 
       {/* Related Products */}
       {relatedProducts.length > 0 && (

@@ -2,13 +2,27 @@
 
 import { createContext, useContext, useState, ReactNode } from "react";
 
-interface Product {
+interface Review {
+  id: number;
+  name: string;
+  rating: number;
+  comment: string;
+}
+
+export interface Product {
   id: number;
   name: string;
   price: number;
   image: string;
   rating: number;
   description: string;
+  category: string;
+  brand: string;
+  stock: number;
+  isFeatured: boolean;
+  gender: "Men" | "Women" | "Unisex"|string;
+  content: string;
+  reviews: Review[];
 }
 
 export interface CartItem extends Product {

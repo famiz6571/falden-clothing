@@ -86,38 +86,40 @@ export default function ProductCard({ product }: Props) {
           </div>
         </div>
 
-        {/* Add to Cart or Quantity */}
-        {cartItem ? (
-          <div className="mt-4 flex items-center justify-between gap-3">
-            {/* Decrease Button */}
-            <button
-              onClick={() => decreaseQty(product.id)}
-              className="flex items-center justify-center w-10 h-10 bg-red-500 hover:bg-red-600 text-white rounded-full shadow-md transition-transform transform hover:scale-110"
-            >
-              <Minus size={20} />
-            </button>
+        {/* Add to Cart or Quantity Controls */}
+        <div className="mt-4 flex justify-center">
+          {cartItem ? (
+            <div className="flex items-center justify-between w-3/5 bg-white/20 dark:bg-gray-800/40 backdrop-blur-sm border border-white/30 dark:border-gray-700 rounded-xl p-1 shadow-md">
+              {/* Decrease Button */}
+              <button
+                onClick={() => decreaseQty(product.id)}
+                className="flex items-center justify-center w-10 h-10 bg-red-500 hover:bg-red-600 text-white rounded-full shadow-md transition-transform transform hover:scale-110 cursor-pointer"
+              >
+                <Minus size={18} />
+              </button>
 
-            {/* Quantity Display */}
-            <span className="text-gray-900 dark:text-gray-100 font-semibold text-lg">
-              {cartItem.quantity}
-            </span>
+              {/* Quantity Display */}
+              <span className="text-gray-900 dark:text-gray-100 font-semibold text-lg">
+                {cartItem.quantity}
+              </span>
 
-            {/* Increase Button */}
+              {/* Increase Button */}
+              <button
+                onClick={() => increaseQty(product.id)}
+                className="flex items-center justify-center w-10 h-10 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-md transition-transform transform hover:scale-110 cursor-pointer"
+              >
+                <Plus size={18} />
+              </button>
+            </div>
+          ) : (
             <button
-              onClick={() => increaseQty(product.id)}
-              className="flex items-center justify-center w-10 h-10 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-md transition-transform transform hover:scale-110"
+              onClick={() => addToCart(product)}
+              className="w-3/5 py-2 bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-500 dark:to-blue-400 text-white font-semibold rounded-xl shadow-md hover:from-blue-700 hover:to-blue-600 dark:hover:from-blue-600 dark:hover:to-blue-500 transition-all duration-300 cursor-pointer"
             >
-              <Plus size={20} />
+              Add to Cart
             </button>
-          </div>
-        ) : (
-          <button
-            onClick={() => addToCart(product)}
-            className="mt-4 w-full py-2 bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-500 dark:to-blue-400 text-white font-semibold rounded-xl shadow-md hover:from-blue-700 hover:to-blue-600 dark:hover:from-blue-600 dark:hover:to-blue-500 transition-all duration-300"
-          >
-            Add to Cart
-          </button>
-        )}
+          )}
+        </div>
       </div>
     </motion.div>
   );
