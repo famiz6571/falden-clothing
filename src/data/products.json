@@ -10,7 +10,7 @@
     "gender": "Men",
     "rating": 4.5,
     "description": "A classic jacket perfect for all seasons, made with premium materials.",
-    "image": "/products/jacket.png",
+    "image": "/products/jacket.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>The Classic Jacket is a timeless wardrobe staple combining elegance and durability. Ideal for everyday wear and all seasons.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: 100% Cotton with polyester lining</li><li>Reinforced stitching for durability</li><li>Tailored fit suitable for casual or semi-formal outings</li><li>Care: Machine wash cold, hang dry</li></ul></div>",
     "reviews": [
       {
@@ -44,7 +44,7 @@
     "gender": "Women",
     "rating": 4.7,
     "description": "Lightweight summer dress for sunny days, comfortable and stylish.",
-    "image": "/products/dress.png",
+    "image": "/products/dress.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Summer Dress offers a breezy, elegant style for warm days. Breathable cotton ensures all-day comfort, perfect for casual outings or semi-formal events.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: 100% Cotton</li><li>Flattering A-line cut</li><li>Subtle detailing for enhanced style</li><li>Care: Gentle wash, hang dry</li></ul></div>",
     "reviews": [
       {
@@ -78,7 +78,7 @@
     "gender": "Unisex",
     "rating": 4.8,
     "description": "Comfortable sneakers for everyday wear with durable sole.",
-    "image": "/products/sneakers.png",
+    "image": "/products/sneakers.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Lightweight and ergonomic, these sneakers are perfect for all-day wear. Breathable mesh keeps your feet cool, while a durable sole ensures long-lasting comfort.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Mesh textile upper with rubber sole</li><li>Lightweight and flexible for walking and running</li><li>Ergonomic design for optimal support</li><li>Care: Wipe clean with damp cloth, air dry</li></ul></div>",
     "reviews": [
       {
@@ -112,7 +112,7 @@
     "gender": "Men",
     "rating": 4.6,
     "description": "Cozy hoodie for casual outings, perfect for layering.",
-    "image": "/products/hoodie.png",
+    "image": "/products/hoodie.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Soft and cozy hoodie ideal for casual wear and layering in cooler months. Ribbed cuffs and hem ensure a snug fit.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Cotton-polyester blend</li><li>Front kangaroo pocket</li><li>Ribbed cuffs and hem for comfort</li><li>Care: Machine wash cold, tumble dry low</li></ul></div>",
     "reviews": [
       {
@@ -146,7 +146,7 @@
     "gender": "Unisex",
     "rating": 4.4,
     "description": "Classic fit jeans for versatile styling, durable fabric.",
-    "image": "/products/jeans.png",
+    "image": "/products/jeans.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>These Classic Jeans feature a timeless design suitable for all occasions. Durable fabric ensures longevity while offering comfort for daily wear.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: 98% Cotton, 2% Elastane</li><li>Regular fit, mid-rise waist</li><li>Five-pocket design</li><li>Care: Machine wash cold, tumble dry low</li></ul></div>",
     "reviews": [
       {
@@ -180,7 +180,7 @@
     "gender": "Unisex",
     "rating": 4.3,
     "description": "Comfortable cotton T-shirt available in multiple colors.",
-    "image": "/products/tshirt.png",
+    "image": "/products/tshirt.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>A versatile T-shirt crafted from soft cotton, designed for comfort and everyday wear. Available in multiple colors to match your style.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: 100% Cotton</li><li>Classic round neck design</li><li>Regular fit</li><li>Care: Machine wash cold, tumble dry low</li></ul></div>",
     "reviews": [
       {
@@ -214,7 +214,7 @@
     "gender": "Men",
     "rating": 4.9,
     "description": "Premium leather boots for formal and casual wear.",
-    "image": "/products/boots.png",
+    "image": "/products/boots.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Crafted from genuine leather, these boots provide long-lasting durability and a sophisticated style for formal or casual occasions.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Genuine leather</li><li>Classic lace-up design</li><li>Padded insole for comfort</li><li>Care: Leather cleaner and conditioner recommended</li></ul></div>",
     "reviews": [
       {
@@ -248,7 +248,7 @@
     "gender": "Unisex",
     "rating": 4.7,
     "description": "Stylish denim jacket with classic fit and durable fabric.",
-    "image": "/products/denim-jacket.png",
+    "image": "/products/denim-jacket.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Denim Jacket offers a perfect blend of style and durability. A classic fit with reinforced seams makes it a versatile wardrobe staple.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: 100% Denim Cotton</li><li>Button-front closure</li><li>Multiple pockets for convenience</li><li>Care: Machine wash cold, tumble dry low</li></ul></div>",
     "reviews": [
       {
@@ -282,7 +282,7 @@
     "gender": "Women",
     "rating": 4.8,
     "description": "Elegant evening gown for special occasions, luxurious fabric.",
-    "image": "/products/evening-gown.png",
+    "image": "/products/evening-gown.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Evening Gown is perfect for formal events and parties. Made with high-quality fabric, it provides elegance and comfort for special nights.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Silk blend with lace overlay</li><li>Floor-length A-line silhouette</li><li>Back zipper closure for perfect fit</li><li>Care: Dry clean only</li></ul></div>",
     "reviews": [
       {
@@ -316,7 +316,7 @@
     "gender": "Men",
     "rating": 4.5,
     "description": "Lightweight sports shorts for workouts and outdoor activities.",
-    "image": "/products/sports-shorts.png",
+    "image": "/products/sports-shorts.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>These Sports Shorts are perfect for running, gym, and outdoor workouts. Breathable and lightweight, they ensure maximum comfort and mobility.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Polyester-spandex blend</li><li>Elastic waistband with drawstring</li><li>Quick-dry fabric</li><li>Care: Machine wash cold, hang dry</li></ul></div>",
     "reviews": [
       {
@@ -350,7 +350,7 @@
     "gender": "Women",
     "rating": 4.8,
     "description": "Warm winter coat with premium insulation.",
-    "image": "/products/winter-coat.png",
+    "image": "/products/winter-coat.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Stay warm and stylish this winter with our premium insulated Winter Coat. Soft inner lining and water-resistant fabric ensure comfort and protection.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Polyester outer shell with fleece lining</li><li>Insulated for cold weather</li><li>Hooded with adjustable drawstrings</li><li>Care: Machine wash gentle, air dry</li></ul></div>",
     "reviews": [
       {
@@ -384,7 +384,7 @@
     "gender": "Women",
     "rating": 4.4,
     "description": "Stylish floral skirt for casual and semi-formal wear.",
-    "image": "/products/floral-skirt.png",
+    "image": "/products/floral-skirt.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Floral Skirt features an elegant floral print for a feminine and chic look. Perfect for brunches, casual outings, or semi-formal events.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: 100% Cotton</li><li>Elastic waistband for comfortable fit</li><li>A-line silhouette</li><li>Care: Machine wash cold, hang dry</li></ul></div>",
     "reviews": [
       {
@@ -418,7 +418,7 @@
     "gender": "Unisex",
     "rating": 4.7,
     "description": "Lightweight running shoes for optimal performance.",
-    "image": "/products/running-shoes.png",
+    "image": "/products/running-shoes.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Designed for runners, these shoes provide optimal grip, cushioning, and breathability. Suitable for road running or gym sessions.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Mesh upper with EVA sole</li><li>Lightweight and flexible</li><li>Shock absorption for high-impact activities</li><li>Care: Wipe clean, air dry</li></ul></div>",
     "reviews": [
       {
@@ -452,7 +452,7 @@
     "gender": "Women",
     "rating": 4.5,
     "description": "Cozy pullover sweater for winter comfort.",
-    "image": "/products/pullover.png",
+    "image": "/products/pullover.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Stay warm in style with this soft Pullover Sweater. Perfect for layering or casual wear during cooler months.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Wool-cotton blend</li><li>Classic crew neck</li><li>Ribbed cuffs and hem</li><li>Care: Hand wash cold, lay flat to dry</li></ul></div>",
     "reviews": [
       {
@@ -486,7 +486,7 @@
     "gender": "Men",
     "rating": 4.6,
     "description": "Smart casual chinos for everyday styling.",
-    "image": "/products/chinos.png",
+    "image": "/products/chinos.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>These Chinos Pants offer a polished yet relaxed look suitable for work or casual outings. Soft, breathable fabric ensures comfort throughout the day.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Cotton-spandex blend</li><li>Regular fit with tapered leg</li><li>Flat-front design</li><li>Care: Machine wash cold, tumble dry low</li></ul></div>",
     "reviews": [
       {
@@ -520,7 +520,7 @@
     "gender": "Women",
     "rating": 4.3,
     "description": "Trendy graphic T-shirt for casual outings.",
-    "image": "/products/graphic-tee.png",
+    "image": "/products/graphic-tee.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Graphic Tee adds personality to your casual wardrobe. Soft cotton and vibrant print make it perfect for everyday wear.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: 100% Cotton</li><li>Regular fit</li><li>Printed graphic design</li><li>Care: Machine wash inside out, hang dry</li></ul></div>",
     "reviews": [
       {
@@ -554,7 +554,7 @@
     "gender": "Women",
     "rating": 4.8,
     "description": "Elegant high heels perfect for parties and formal events.",
-    "image": "/products/high-heels.png",
+    "image": "/products/high-heels.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>These High Heels elevate your style for any formal occasion. Designed for elegance, comfort, and lasting quality.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Faux leather upper, rubber sole</li><li>3-inch stiletto heel</li><li>Padded insole for comfort</li><li>Care: Wipe clean, store in a cool dry place</li></ul></div>",
     "reviews": [
       {
@@ -588,7 +588,7 @@
     "gender": "Men",
     "rating": 4.5,
     "description": "Premium leather belt to complement your outfit.",
-    "image": "/products/belt.png",
+    "image": "/products/belt.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Leather Belt is a classic accessory crafted from premium leather. Durable and stylish, it completes any outfit.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Genuine leather</li><li>Adjustable buckle closure</li><li>Width: 1.25 inches</li><li>Care: Wipe with damp cloth</li></ul></div>",
     "reviews": [
       {
@@ -622,7 +622,7 @@
     "gender": "Unisex",
     "rating": 4.4,
     "description": "Warm beanie hat for winter season.",
-    "image": "/products/beanie.png",
+    "image": "/products/beanie.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Stay warm during cold weather with this cozy Beanie Hat. Soft fabric ensures comfort and durability.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Acrylic blend</li><li>Stretchable and comfortable fit</li><li>Unisex style</li><li>Care: Hand wash, lay flat to dry</li></ul></div>",
     "reviews": [
       {
@@ -656,7 +656,7 @@
     "gender": "Women",
     "rating": 4.6,
     "description": "Comfortable sandals for sunny days and outdoor activities.",
-    "image": "/products/sandals.png",
+    "image": "/products/sandals.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Lightweight and stylish, these Summer Sandals are perfect for hot weather. Soft footbed ensures comfort during long walks.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Synthetic upper with rubber sole</li><li>Open-toe design</li><li>Adjustable straps for secure fit</li><li>Care: Wipe clean, air dry</li></ul></div>",
     "reviews": [
       {
@@ -690,7 +690,7 @@
     "gender": "Unisex",
     "rating": 4.8,
     "description": "Premium leather backpack for work, travel, and daily use.",
-    "image": "/products/leather-backpack.png",
+    "image": "/products/leather-backpack.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Leather Backpack combines functionality with a sleek, modern design. Ideal for professionals and travelers who value style and durability.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Genuine leather</li><li>Padded laptop compartment (up to 15-inch)</li><li>Adjustable shoulder straps</li><li>Care: Wipe with damp cloth, use leather conditioner</li></ul></div>",
     "reviews": [
       {
@@ -724,7 +724,7 @@
     "gender": "Women",
     "rating": 4.4,
     "description": "Eco-friendly canvas tote bag for everyday essentials.",
-    "image": "/products/tote-bag.png",
+    "image": "/products/tote-bag.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Canvas Tote Bag is lightweight, durable, and perfect for shopping or casual outings. A stylish and sustainable everyday accessory.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Heavy-duty canvas</li><li>Spacious single compartment</li><li>Reusable and eco-friendly</li><li>Care: Hand wash, air dry</li></ul></div>",
     "reviews": [
       {
@@ -758,7 +758,7 @@
     "gender": "Unisex",
     "rating": 4.7,
     "description": "Spacious duffel bag designed for weekend trips and gym use.",
-    "image": "/products/duffel-bag.png",
+    "image": "/products/duffel-bag.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Built for travel and active lifestyles, this Travel Duffel Bag offers ample storage with reinforced handles and a sleek look.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Water-resistant polyester</li><li>Large main compartment with inner pockets</li><li>Detachable shoulder strap</li><li>Care: Spot clean, air dry</li></ul></div>",
     "reviews": [
       {
@@ -792,7 +792,7 @@
     "gender": "Men",
     "rating": 4.5,
     "description": "Compact crossbody sling bag for daily essentials.",
-    "image": "/products/sling-bag.png",
+    "image": "/products/sling-bag.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Crossbody Sling Bag is ideal for minimalists. Compact yet functional, it keeps your essentials secure and accessible.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Nylon fabric</li><li>Adjustable crossbody strap</li><li>Multiple zip compartments</li><li>Care: Wipe clean with damp cloth</li></ul></div>",
     "reviews": [
       {
@@ -826,7 +826,7 @@
     "gender": "Men",
     "rating": 4.6,
     "description": "Classic striped polo shirt, comfortable and stylish for casual wear.",
-    "image": "/products/polo-shirt.png",
+    "image": "/products/polo-shirt.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Striped Polo Shirt offers a timeless look for casual outings or weekend wear. Soft cotton ensures all-day comfort.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: 100% Cotton</li><li>Classic collar with button placket</li><li>Regular fit</li><li>Care: Machine wash cold, hang dry</li></ul></div>",
     "reviews": [
       {
@@ -860,7 +860,7 @@
     "gender": "Unisex",
     "rating": 4.6,
     "description": "Comfortable zip-up hoodie, perfect for layering and outdoor activities.",
-    "image": "/products/zip-hoodie.png",
+    "image": "/products/zip-hoodie.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>A versatile Zip-Up Hoodie with a casual style, made from soft cotton blend. Ideal for daily wear or workouts.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Cotton-polyester blend</li><li>Full front zipper</li><li>Adjustable drawstring hood</li><li>Care: Machine wash cold, tumble dry low</li></ul></div>",
     "reviews": [
       {
@@ -894,7 +894,7 @@
     "gender": "Unisex",
     "rating": 4.5,
     "description": "Convenient slip-on sneakers, ideal for casual and everyday wear.",
-    "image": "/products/slip-on-sneakers.png",
+    "image": "/products/slip-on-sneakers.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Easy to wear slip-on sneakers made with breathable materials. Perfect for walking or casual outings.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Canvas upper with rubber sole</li><li>Slip-on design with elastic side panels</li><li>Lightweight and flexible</li><li>Care: Wipe clean, air dry</li></ul></div>",
     "reviews": [
       {
@@ -928,7 +928,7 @@
     "gender": "Unisex",
     "rating": 4.5,
     "description": "Stylish UV-protective sunglasses for sunny days.",
-    "image": "/products/sunglasses.png",
+    "image": "/products/sunglasses.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Protect your eyes in style with these sunglasses. Lightweight and durable, ideal for daily use and outdoor activities.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Polycarbonate lenses</li><li>UV400 protection</li><li>Lightweight frame</li><li>Care: Wipe clean with soft cloth</li></ul></div>",
     "reviews": [
       {
@@ -962,7 +962,7 @@
     "gender": "Men",
     "rating": 4.6,
     "description": "Classic leather wallet with multiple compartments.",
-    "image": "/products/wallet.png",
+    "image": "/products/wallet.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Leather Wallet is perfect for keeping your cards and cash organized. Slim and stylish for everyday use.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Genuine leather</li><li>Multiple card slots</li><li>Compact design</li><li>Care: Wipe clean with soft cloth</li></ul></div>",
     "reviews": [
       {
@@ -996,7 +996,7 @@
     "gender": "Unisex",
     "rating": 4.4,
     "description": "Compact key organizer to keep keys neat and secure.",
-    "image": "/products/key-organizer.png",
+    "image": "/products/key-organizer.webp",
     "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Organize your keys efficiently with this Travel Key Organizer. Prevent scratches and keep keys easily accessible.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Aluminum alloy</li><li>Compact and lightweight</li><li>Holds multiple keys</li><li>Care: Wipe clean, avoid water exposure</li></ul></div>",
     "reviews": [
       {

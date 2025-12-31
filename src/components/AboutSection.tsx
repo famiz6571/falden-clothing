@@ -21,7 +21,7 @@ export default function AboutSection() {
         >
           <div className="rounded-xl overflow-hidden shadow-2xl bg-white/30 dark:bg-gray-800/30 backdrop-blur-lg border border-white/20 dark:border-gray-600/20">
             <Image
-              src="/about-fashion.png"
+              src="/about-fashion.webp"
               alt="About FALDEN"
               width={500}
               height={500}

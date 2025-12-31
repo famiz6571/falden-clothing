@@ -57,7 +57,7 @@ export default function Hero() {
         >
           <div className="w-full sm:w-4/5 md:w-full rounded-xl overflow-hidden shadow-2xl">
             <Image
-              src="/hero-fashion.png"
+              src="/hero-fashion.webp"
               alt="FALDEN Fashion"
               width={600} // Desktop width
               height={600} // Desktop height

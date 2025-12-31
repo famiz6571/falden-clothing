@@ -35,7 +35,7 @@ export default function AuthLayout({
 
           {/* Illustration from Illustrator exported as SVG/PNG */}
           <Image
-            src="/illustration-fashion.png"
+            src="/illustration-fashion.webp"
             alt="Fashion Illustration"
             width={400}
             height={400}
