@@ -62,16 +62,16 @@ export default function ShippingReturnsPage() {
             <PriceCard
               title="Standard Shipping"
               price="FREE"
-              desc="On orders above ₹999"
+              desc="On orders above $99"
             />
             <PriceCard
               title="Express Shipping"
-              price="₹149"
+              price="$14.99"
               desc="Delivery in 1–3 business days"
             />
             <PriceCard
               title="International"
-              price="₹999+"
+              price="$99+"
               desc="7–14 business days (tracking included)"
             />
           </div>

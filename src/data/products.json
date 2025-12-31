@@ -678,5 +678,345 @@
         "comment": "Great for beach and casual wear."
       }
     ]
+  },
+  {
+    "id": 21,
+    "name": "Leather Backpack",
+    "price": 159,
+    "category": "Bags",
+    "brand": "FALDEN",
+    "stock": 28,
+    "isFeatured": true,
+    "gender": "Unisex",
+    "rating": 4.8,
+    "description": "Premium leather backpack for work, travel, and daily use.",
+    "image": "/products/leather-backpack.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Leather Backpack combines functionality with a sleek, modern design. Ideal for professionals and travelers who value style and durability.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Genuine leather</li><li>Padded laptop compartment (up to 15-inch)</li><li>Adjustable shoulder straps</li><li>Care: Wipe with damp cloth, use leather conditioner</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Daniel Moore",
+        "rating": 5,
+        "comment": "Excellent quality leather and very spacious."
+      },
+      {
+        "id": 2,
+        "name": "Sarah Lin",
+        "rating": 4,
+        "comment": "Stylish and practical, slightly heavy when full."
+      },
+      {
+        "id": 3,
+        "name": "Aaron Blake",
+        "rating": 4.5,
+        "comment": "Perfect for office and short trips."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Canvas Tote Bag",
+    "price": 45,
+    "category": "Bags",
+    "brand": "FALDEN",
+    "stock": 60,
+    "isFeatured": false,
+    "gender": "Women",
+    "rating": 4.4,
+    "description": "Eco-friendly canvas tote bag for everyday essentials.",
+    "image": "/products/tote-bag.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Canvas Tote Bag is lightweight, durable, and perfect for shopping or casual outings. A stylish and sustainable everyday accessory.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Heavy-duty canvas</li><li>Spacious single compartment</li><li>Reusable and eco-friendly</li><li>Care: Hand wash, air dry</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Emily Ross",
+        "rating": 5,
+        "comment": "Love the size and simple design."
+      },
+      {
+        "id": 2,
+        "name": "Nina Patel",
+        "rating": 4,
+        "comment": "Great for groceries and daily use."
+      },
+      {
+        "id": 3,
+        "name": "Claire Wilson",
+        "rating": 4.5,
+        "comment": "Strong fabric and very practical."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Travel Duffel Bag",
+    "price": 119,
+    "category": "Bags",
+    "brand": "FALDEN",
+    "stock": 32,
+    "isFeatured": true,
+    "gender": "Unisex",
+    "rating": 4.7,
+    "description": "Spacious duffel bag designed for weekend trips and gym use.",
+    "image": "/products/duffel-bag.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Built for travel and active lifestyles, this Travel Duffel Bag offers ample storage with reinforced handles and a sleek look.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Water-resistant polyester</li><li>Large main compartment with inner pockets</li><li>Detachable shoulder strap</li><li>Care: Spot clean, air dry</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Kevin Turner",
+        "rating": 5,
+        "comment": "Perfect size for weekend trips."
+      },
+      {
+        "id": 2,
+        "name": "Mark Evans",
+        "rating": 4,
+        "comment": "Durable and stylish, zippers are solid."
+      },
+      {
+        "id": 3,
+        "name": "Jason Cole",
+        "rating": 4.5,
+        "comment": "Great gym and travel bag."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Crossbody Sling Bag",
+    "price": 59,
+    "category": "Bags",
+    "brand": "FALDEN",
+    "stock": 55,
+    "isFeatured": false,
+    "gender": "Men",
+    "rating": 4.5,
+    "description": "Compact crossbody sling bag for daily essentials.",
+    "image": "/products/sling-bag.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Crossbody Sling Bag is ideal for minimalists. Compact yet functional, it keeps your essentials secure and accessible.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Nylon fabric</li><li>Adjustable crossbody strap</li><li>Multiple zip compartments</li><li>Care: Wipe clean with damp cloth</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Tom Walker",
+        "rating": 5,
+        "comment": "Perfect size for daily use."
+      },
+      {
+        "id": 2,
+        "name": "Leo Martin",
+        "rating": 4,
+        "comment": "Comfortable and lightweight."
+      },
+      {
+        "id": 3,
+        "name": "Nathan Reed",
+        "rating": 4.5,
+        "comment": "Stylish and very practical."
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Striped Polo Shirt",
+    "price": 59,
+    "category": "Tops",
+    "brand": "FALDEN",
+    "stock": 80,
+    "isFeatured": false,
+    "gender": "Men",
+    "rating": 4.6,
+    "description": "Classic striped polo shirt, comfortable and stylish for casual wear.",
+    "image": "/products/polo-shirt.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Striped Polo Shirt offers a timeless look for casual outings or weekend wear. Soft cotton ensures all-day comfort.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: 100% Cotton</li><li>Classic collar with button placket</li><li>Regular fit</li><li>Care: Machine wash cold, hang dry</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Ethan Lee",
+        "rating": 5,
+        "comment": "Soft and fits perfectly."
+      },
+      {
+        "id": 2,
+        "name": "Ryan Carter",
+        "rating": 4,
+        "comment": "Nice design, good quality."
+      },
+      {
+        "id": 3,
+        "name": "Lucas Gray",
+        "rating": 4.5,
+        "comment": "Great for casual wear."
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Zip-Up Hoodie",
+    "price": 85,
+    "category": "Hoodies",
+    "brand": "FALDEN",
+    "stock": 45,
+    "isFeatured": false,
+    "gender": "Unisex",
+    "rating": 4.6,
+    "description": "Comfortable zip-up hoodie, perfect for layering and outdoor activities.",
+    "image": "/products/zip-hoodie.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>A versatile Zip-Up Hoodie with a casual style, made from soft cotton blend. Ideal for daily wear or workouts.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Cotton-polyester blend</li><li>Full front zipper</li><li>Adjustable drawstring hood</li><li>Care: Machine wash cold, tumble dry low</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Mia Sanders",
+        "rating": 5,
+        "comment": "Soft and lightweight, love it."
+      },
+      {
+        "id": 2,
+        "name": "Ella Thompson",
+        "rating": 4,
+        "comment": "Very comfortable, color holds well."
+      },
+      {
+        "id": 3,
+        "name": "Jack Ryan",
+        "rating": 4.5,
+        "comment": "Perfect for chilly evenings."
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Slip-On Sneakers",
+    "price": 95,
+    "category": "Shoes",
+    "brand": "FALDEN",
+    "stock": 30,
+    "isFeatured": false,
+    "gender": "Unisex",
+    "rating": 4.5,
+    "description": "Convenient slip-on sneakers, ideal for casual and everyday wear.",
+    "image": "/products/slip-on-sneakers.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Easy to wear slip-on sneakers made with breathable materials. Perfect for walking or casual outings.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Canvas upper with rubber sole</li><li>Slip-on design with elastic side panels</li><li>Lightweight and flexible</li><li>Care: Wipe clean, air dry</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Liam Brooks",
+        "rating": 5,
+        "comment": "Super comfortable and easy to wear."
+      },
+      {
+        "id": 2,
+        "name": "Noah Carter",
+        "rating": 4,
+        "comment": "Nice fit but slightly tight initially."
+      },
+      {
+        "id": 3,
+        "name": "Ethan Bell",
+        "rating": 4.5,
+        "comment": "Great for daily casual wear."
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Sunglasses",
+    "price": 49,
+    "category": "Accessories",
+    "brand": "FALDEN",
+    "stock": 70,
+    "isFeatured": true,
+    "gender": "Unisex",
+    "rating": 4.5,
+    "description": "Stylish UV-protective sunglasses for sunny days.",
+    "image": "/products/sunglasses.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Protect your eyes in style with these sunglasses. Lightweight and durable, ideal for daily use and outdoor activities.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Polycarbonate lenses</li><li>UV400 protection</li><li>Lightweight frame</li><li>Care: Wipe clean with soft cloth</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sophia Lane",
+        "rating": 5,
+        "comment": "Stylish and comfortable."
+      },
+      {
+        "id": 2,
+        "name": "Emma Brooks",
+        "rating": 4,
+        "comment": "Good protection and looks great."
+      },
+      {
+        "id": 3,
+        "name": "Ava Carter",
+        "rating": 4.5,
+        "comment": "Perfect for sunny days."
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Leather Wallet",
+    "price": 39,
+    "category": "Accessories",
+    "brand": "FALDEN",
+    "stock": 65,
+    "isFeatured": true,
+    "gender": "Men",
+    "rating": 4.6,
+    "description": "Classic leather wallet with multiple compartments.",
+    "image": "/products/wallet.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>This Leather Wallet is perfect for keeping your cards and cash organized. Slim and stylish for everyday use.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Genuine leather</li><li>Multiple card slots</li><li>Compact design</li><li>Care: Wipe clean with soft cloth</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "James Allen",
+        "rating": 5,
+        "comment": "Perfect size and quality."
+      },
+      {
+        "id": 2,
+        "name": "Benjamin Scott",
+        "rating": 4,
+        "comment": "Good craftsmanship, feels durable."
+      },
+      {
+        "id": 3,
+        "name": "William Clark",
+        "rating": 4.5,
+        "comment": "Great everyday wallet."
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Travel Key Organizer",
+    "price": 29,
+    "category": "Accessories",
+    "brand": "FALDEN",
+    "stock": 80,
+    "isFeatured": false,
+    "gender": "Unisex",
+    "rating": 4.4,
+    "description": "Compact key organizer to keep keys neat and secure.",
+    "image": "/products/key-organizer.png",
+    "content": "<div class='space-y-4'><p class='text-gray-800 dark:text-gray-200'>Organize your keys efficiently with this Travel Key Organizer. Prevent scratches and keep keys easily accessible.</p><ul class='list-disc list-inside text-gray-700 dark:text-gray-300'><li>Material: Aluminum alloy</li><li>Compact and lightweight</li><li>Holds multiple keys</li><li>Care: Wipe clean, avoid water exposure</li></ul></div>",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Oliver Smith",
+        "rating": 5,
+        "comment": "Keeps my keys neat and organized."
+      },
+      {
+        "id": 2,
+        "name": "Ethan Baker",
+        "rating": 4,
+        "comment": "Compact and very useful."
+      },
+      {
+        "id": 3,
+        "name": "Liam Hill",
+        "rating": 4.5,
+        "comment": "Great little gadget for everyday use."
+      }
+    ]
   }
 ]

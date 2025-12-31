@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { BsBackpack } from "react-icons/bs";
 import {
   FiLayers,
   FiAward,
@@ -18,6 +19,7 @@ const categories = [
   { name: "Pants", icon: <FiScissors size={32} /> },
   { name: "Tops", icon: <FiGift size={32} /> }, // gift icon
   { name: "Accessories", icon: <MdWatch size={32} /> },
+  { name: "Bags", icon: <BsBackpack size={32} /> },
 ];
 
 export default function CategoriesSection() {
